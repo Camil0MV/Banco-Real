@@ -1,0 +1,269 @@
+* {
+    font-family: Nunito;
+}
+
+input[type="number"] {
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+body {
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 10.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a8d1dc;
+}
+
+header h1 {
+    margin-left: 2vw;
+}
+
+header a{
+    color: #2C3257;
+    text-decoration: none;
+}
+
+header .search-box {
+    margin-right: 2vw;
+    padding: 15px;
+    background-color: #F7F7F7;
+    border: 1px solid #3F5465;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+header .search-box::placeholder {
+    color: #3F5465;
+    font-size: 15px;
+}
+
+main {
+    height: 79.6vh;
+    width: auto;
+}
+
+main .hidden {
+    display: none;
+}
+
+main section {
+    display: flex;
+}
+
+main section fieldset {
+    height: 56.2vh;
+    width: 21.2vw;
+}
+
+main section form fieldset legend {
+    font-size: 25px;
+}
+
+main section #exit-btn {
+    height: 3.8vh;
+    width: auto;
+    background-color: #19232b;
+    color: #F7F7F7;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 2vh 1.2vw 0 0;
+    cursor: pointer;
+}
+
+main section #exit-btn:hover {
+    background-color: #F7F7F7;
+    color: #19232b;
+}
+
+main #account-operations {
+    padding: 9vh 0 12.8vh 21.1vw;
+}
+
+main #account-operations .account-operations-btn {
+    width: 50%;
+    background-color: #3F5465;
+    color: #F7F7F7;
+    border: 1px solid #3F5465;
+    padding: 1.3vh 1.3vw;
+    margin: 6.3vh 1.3vw 0 5.3vw;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main #account-operations .account-operations-btn:hover {
+    background-color: #F7F7F7;
+    color: #3F5465;
+    border: 1px solid #3F5465;
+}
+
+main #account-operations #account-history-btn {
+    height: 4.4vh;
+    width: auto;
+    background-color: #F7F7F7;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 11.5vh 0 6.4vh 19vw;
+    cursor: pointer;
+}
+
+main #account-operations #account-history-btn img {
+    height: 2.5vh;
+    width: auto;
+    padding-top: 0.5vh;
+}
+
+main .back-btn {
+    height: 3.8vh;
+    width: auto;
+    background-color: #F7F7F7;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 2vh 1.2vw 0 0;
+    cursor: pointer;
+}
+
+main .back-btn img {
+    height: 2.5vh;
+    width: auto;
+    padding-top: 0.5vh;
+}
+
+main #account-deposit {
+    padding: 9vh 0 12.8vh 21.7vw;
+}
+
+main #account-deposit form button {
+    width: 50%;
+    background-color: #3F5465;
+    color: #F7F7F7;
+    border: 1px solid #3F5465;;
+    padding: 1.3vh 1.3vw;
+    margin: 2.8vh 1.2vw 0 5.3vw;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main #account-deposit form button:hover {
+    background-color: #F7F7F7;
+    color: #3F5465;
+}
+
+main #account-withdraw {
+    padding: 9vh 0 12.8vh 21.7vw;
+}
+
+main #account-withdraw form button {
+    width: 50%;
+    background-color: #3F5465;
+    color: #F7F7F7;
+    border: 1px solid #3F5465;
+    padding: 1.3vh 1.3vw;
+    margin: 2.8vh 1.2vw 0 5.3vw;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main #account-withdraw form button:hover {
+    background-color: #F7F7F7;
+    color: #3F5465;
+}
+
+main #account-deposit form #success-deposit, main #account-withdraw form #success-withdrawal {
+    padding-top: 5vh;
+}
+
+main #account-balance-inquiry {
+    padding: 9vh 0 12.8vh 21.7vw;
+}
+
+main #account-history {
+    padding: 9vh 0 12.8vh 21.7vw;
+}
+
+main #account-history p {
+    margin: 0 0 1.8vh 0;
+}
+
+main #account-history .divider {
+    border: 0.1vh solid;
+    height: -0.8vh;
+    color: #6C6C6C;
+}
+
+main #account-history #history ul {
+    margin-right: 3.9vh;
+}
+
+main #account-history #history li {
+    padding: 1vh 0;
+}
+
+main .operation-box {
+    position: relative;
+    margin-bottom: 1.3vh;
+    margin: 1.3vh 14%;
+}
+    
+main .operation-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+}
+    
+main .operation-box label {
+    position: absolute;
+    left: 0;
+    top: 1.3vh;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+    transform-origin: 0 0;
+    transform: translate(0, 0);
+    color: #2C3257;
+}
+
+main .operation-box input:focus {
+    outline: none;
+}
+
+main .operation-box input:focus + label, input[type="number"]:not(:placeholder-shown) + label {
+    top: -1vh;
+    font-size: 12px;
+}
+
+footer {
+    height: 10.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3F5465;
+    color: #F7F7F7;
+}
+
+footer h2 {
+    margin-left: 2vw;
+}
+
+footer p {
+    margin-right: 2vw;
+}

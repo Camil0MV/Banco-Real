@@ -1,0 +1,264 @@
+* {
+    font-family: Nunito;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input[type="number"] {
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+body {
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 10.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a8d1dc;
+}
+
+header h1 {
+    margin-left: 2vw;
+}
+
+header a{
+    color: #2C3257;
+    text-decoration: none;
+}
+
+header .search-box {
+    margin-right: 2vw;
+    padding: 15px;
+    background-color: #F7F7F7;
+    border: 1px solid #3F5465;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+header .search-box::placeholder {
+    color: #3F5465;
+    font-size: 15px;
+}
+
+main {
+    height: 79.6vh;
+    width: auto;
+}
+
+main .hidden {
+    display: none;
+}
+
+main section {
+    display: flex;
+}
+
+main section fieldset {
+    height: 56.2vh;
+    width: 21.2vw;
+}
+
+main section form fieldset legend {
+    font-size: 25px;
+}
+
+main #account-options {
+    display: flex;
+    padding: 9vh 0 12.8vh 25vw;
+}
+
+main #account-options .account-options-btn {
+    width: 50%;
+    background-color: #3F5465;
+    color: #F7F7F7;
+    border: 1px solid #3F5465;
+    padding: 1.2vh 1.2vw;
+    margin: 6vh 1.2vw 0 5.3vw;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main #account-options .account-options-btn:hover {
+    background-color: #F7F7F7;
+    color: #3F5465;
+}
+
+main .back-btn {
+    height: 3.8vh;
+    width: auto;
+    background-color: #F7F7F7;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 2vh 1.2vw 0 0;
+    cursor: pointer;
+}
+
+main .back-btn img {
+    height: 2.5vh;
+    width: auto;
+    padding-top: 0.5vh;
+}
+
+main #account-access {
+    padding: 9vh 0 12.7vh 21.7vw;
+}
+
+main #account-access form button {
+    width: 50%;
+    background-color: #3F5465;
+    color: #F7F7F7;
+    border: none;
+    padding: 1.3vh 1.3vw;
+    margin: 2.8vh 1.2vw 0 5.3vw;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main #account-access form button:hover {
+    background-color: #F7F7F7;
+    color: #3F5465;
+    border: 1px solid #3F5465;
+}
+
+main #account-creation {
+    padding: 9vh 0 12.7vh 21.7vw;
+}
+
+main #account-creation form button {
+    width: 50%;
+    background-color: #3F5465;
+    color: #F7F7F7;
+    border: none;
+    padding: 1.3vh 1.3vw;
+    margin: 2.8vh 1.3vw 0 5.3vw;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main #account-creation form button:hover {
+    background-color: #F7F7F7;
+    color: #3F5465;
+    border: 1px solid #3F5465;
+}
+
+main #account-deactivation {
+    padding: 9vh 0 12.8vh 21.7vw;
+}
+
+main #account-deactivation form button {
+    width: 50%;
+    background-color: #3F5465;
+    color: #F7F7F7;
+    border: none;
+    padding: 1.3vh 1.3vw;
+    margin: 2.8vh 1.2vw 0 5.3vw;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main #account-deactivation form button:hover {
+    background-color: #F7F7F7;
+    color: #3F5465;
+    border: 1px solid #3F5465;
+}
+
+main #account-reactivation {
+    padding: 9vh 0 12.8vh 21.7vw;
+}
+
+main #account-reactivation form button {
+    width: 50%;
+    background-color: #3F5465;
+    color: #F7F7F7;
+    border: none;
+    padding: 1.3vh 1.3vw;
+    margin: 2.8vh 1.2vw 0 5.3vw;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main #account-reactivation form button:hover {
+    background-color: #F7F7F7;
+    color: #3F5465;
+    border: 1px solid #3F5465;
+}
+
+main .user-box {
+    position: relative;
+    margin-bottom: 1.3vh;
+    margin: 1.3vh 14%;
+}
+    
+main .user-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+}
+    
+main .user-box label {
+    position: absolute;
+    left: 0;
+    top: 1.3vh;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+    transform-origin: 0;
+    transform: translate(0, 0);
+    color: #2C3257;
+}
+
+main .user-box input:focus {
+    outline: none;
+}
+
+main .user-box input:focus + label,
+main .user-box input[type="text"]:not(:placeholder-shown) + label,
+main .user-box input[type="number"]:not(:placeholder-shown) + label,
+main .user-box input[type="password"]:not(:placeholder-shown) + label,
+main .user-box input[type="email"]:not(:placeholder-shown) + label {
+    top: -1vh;
+    font-size: 12px;
+}
+
+footer {
+    height: 10.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3F5465;
+    color: #F7F7F7;
+}
+
+footer h2 {
+    margin-left: 2vw;
+}
+
+footer p {
+    margin-right: 2vw;
+}

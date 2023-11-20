@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Real</title>
+    <link rel="stylesheet" type="text/css" href="css/user-center.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Banco Real</a></h1>
+        <form>
+            <input type="search" placeholder="Buscar..." class="search-box">
+        </form>
+    </header>
+
+    <main>
+        <section id="account-operations">
+            <a href="index.html" onclick="handleLogout()"><button id="exit-btn">Salir</button></a>
+
+            <form>
+                <fieldset>
+                    <legend>Operaciones de Cuenta</legend>
+    
+                    <button type="button" class="account-operations-btn" id="account-deposit-btn">Depositar</button>
+                    <button type="button" class="account-operations-btn" id="account-withdraw-btn">Retirar</button>
+                    <button type="button" class="account-operations-btn" id="account-check-balance-btn" onclick="checkBalance()">Consultar saldo</button>
+                    <button type="button" id="account-history-btn" onclick="updateOperationHistory()"><img src="img/clock.png" alt="clock"></button>
+                </fieldset>
+
+                <p id="account-number"></p>
+            </form>
+        </section>
+
+        <section id="account-deposit" class="hidden">
+            <button class="back-btn" id="back-btn-1"><img src="img/back-arrow.png" alt="back-arrow"></button>
+
+            <form id="deposit">
+                <fieldset>
+                    <legend>Depósito</legend>
+
+                    <div class="operation-box">
+                        <input type="number" name="deposit-amount" id="deposit-amount" placeholder=" ">
+                        <label for="deposit-amount">Monto</label>
+                    </div>
+
+                    <button type="button" onclick="handleDeposit()">Depositar</button>
+
+                    <p id="success-deposit"></p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="account-withdraw" class="hidden">
+            <button class="back-btn" id="back-btn-2"><img src="img/back-arrow.png" alt="back-arrow"></button>
+
+            <form>
+                <fieldset>
+                    <legend>Retiro</legend>
+
+                    <div class="operation-box">
+                        <input type="number" name="withdrawal-amount" id="withdrawal-amount" placeholder=" ">
+                        <label for="withdrawal-amount">Monto</label>
+                    </div>
+
+                    <button type="button" onclick="handleWithdraw()">Retirar</button>
+
+                    <p id="success-withdrawal"></p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="account-balance-inquiry" class="hidden">
+            <button class="back-btn" id="back-btn-3"><img src="img/back-arrow.png" alt="back-arrow"></button>
+
+            <form>
+                <fieldset>
+                    <legend>Consulta de saldo</legend>
+
+                    <p id="balance"></p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="account-history" class="hidden">
+            <button class="back-btn" id="back-btn-4"><img src="img/back-arrow.png" alt="back-arrow"></button>
+
+            <form>
+                <fieldset>
+                    <legend>Historial de operaciones</legend>
+
+                    <p id="amount-of-deposits"></p>
+                    <p id="amount-of-withdrawals"></p>
+
+                    <hr class="divider">
+                    
+                    <div id="history"><ul></ul></div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Banco Real</h2>
+        <p>Copyright © 2023 Grupo Real</p>
+    </footer>
+
+    <script src="js/account-operations-btns.js" type="text/javascript"></script>
+    <script src="js/user-center.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Real</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Banco Real</a></h1>
+        <form>
+            <input type="search" placeholder="Buscar..." class="search-box">
+        </form>
+    </header>
+
+    <main>
+        <section id="account-options">
+            <form>
+                <fieldset>
+                    <legend>Opciones de Cuenta</legend>
+    
+                    <button type="button" class="account-options-btn" id="account-access-btn">Acceder</button>
+                    <button type="button" class="account-options-btn" id="account-creation-btn">Crear</button>
+                    <button type="button" class="account-options-btn" id="account-deactivation-btn">Desactivar</button>
+                    <button type="button" class="account-options-btn" id="account-reactivation-btn">Reactivar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="account-access" class="hidden">
+            <button class="back-btn" id="back-btn-1"><img src="img/back-arrow.png" alt="back-arrow"></button>
+
+            <form>
+                <fieldset>
+                    <legend>Acceso a la cuenta</legend>
+
+                    <div class="user-box">
+                        <input type="number" name="doc-number-1" id="doc-number-1" placeholder=" " required>
+                        <label for="doc-number-1">Número de documento</label>
+                    </div>
+                    
+                    <div class="user-box">
+                        <input type="password" name="password1" id="password1" placeholder=" " required>
+                        <label for="password1">Contraseña</label>
+                    </div>
+    
+                    <button type="button" onclick="handleAccess()">Acceder</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="account-creation" class="hidden">
+            <button class="back-btn" id="back-btn-2"><img src="img/back-arrow.png" alt="back-arrow"></button>
+
+            <form>
+                <fieldset>
+                    <legend>Creación de Cuenta</legend>
+
+                    <div class="user-box">
+                        <input type="text" name="first-name" id="first-name" placeholder=" " required>
+                        <label for="first-name">Nombre</label>
+                    </div>
+
+                    <div class="user-box">
+                        <input type="text" name="last-name" id="last-name" placeholder=" " required>
+                        <label for="last-name">Apellido</label>
+                    </div>
+    
+                    <div class="user-box">
+                        <input type="number" name="doc-number-2" id="doc-number-2" placeholder=" " required>
+                        <label for="doc-number-2">Número de documento</label>
+                    </div>
+
+                    <div class="user-box">
+                        <input type="email" name="email" id="email" placeholder=" " required>
+                        <label for="email">Correo Electrónico</label>
+                    </div>
+                    
+                    <div class="user-box">
+                        <input type="password" name="password2" id="password2" placeholder=" " required>
+                        <label for="password2">Contraseña</label>
+                    </div>
+    
+                    <button type="button" onclick="handleCreation()">Crear</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="account-deactivation" class="hidden">
+            <button class="back-btn" id="back-btn-3"><img src="img/back-arrow.png" alt="back-arrow"></button>
+
+            <form>
+                <fieldset>
+                    <legend>Desactivación de Cuenta</legend>
+
+                    <div class="user-box">
+                        <input type="number" name="doc-number-3" id="doc-number-3" placeholder=" ">
+                        <label for="doc-number-3">Número de documento</label>
+                    </div>
+                    
+                    <div class="user-box">
+                        <input type="password" name="password3" id="password3" placeholder=" ">
+                        <label for="password3">Contraseña</label>
+                    </div>
+    
+                    <button type="submit">Desactivar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="account-reactivation" class="hidden">
+            <button class="back-btn" id="back-btn-4"><img src="img/back-arrow.png" alt="back-arrow"></button>
+
+            <form>
+                <fieldset>
+                    <legend>Reactivación de Cuenta</legend>
+
+                    <div class="user-box">
+                        <input type="number" name="doc-number-4" id="doc-number-4" placeholder=" ">
+                        <label for="doc-number-4">Número de documento</label>
+                    </div>
+                    
+                    <div class="user-box">
+                        <input type="password" name="password4" id="password4" placeholder=" ">
+                        <label for="password4">Contraseña</label>
+                    </div>
+    
+                    <button type="submit">Reactivar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Banco Real</h2>
+        <p>Copyright © 2023 Grupo Real</p>
+    </footer>
+    
+    <script src="js/account-options-btns.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
